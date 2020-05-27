@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1440.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.ValutazioniUtenteBoundary">
+   <top>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #277c73 #277c73;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/house1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="1280.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="720.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Valutazioni utente" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/man.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <VBox alignment="CENTER_LEFT">
+                           <children>
+                              <Rating fx:id="generalRating" mouseTransparent="true" partialRating="true" rating="0.0">
+                                 <VBox.margin>
+                                    <Insets left="5.0" top="10.0" />
+                                 </VBox.margin>
+                              </Rating>
+                              <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="250.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <ProgressBar fx:id="fiveStarsPb" prefHeight="25.0" prefWidth="180.0" progress="0.0">
+                                       <HBox.margin>
+                                          <Insets top="3.0" />
+                                       </HBox.margin>
+                                    </ProgressBar>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5 stelle">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="250.0">
+                                 <children>
+                                    <ProgressBar fx:id="fourStarsPb" prefHeight="25.0" prefWidth="180.0" progress="0.0">
+                                       <HBox.margin>
+                                          <Insets top="3.0" />
+                                       </HBox.margin>
+                                    </ProgressBar>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4 stelle">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="250.0">
+                                 <children>
+                                    <ProgressBar fx:id="threeStarsPb" prefHeight="25.0" prefWidth="180.0" progress="0.0">
+                                       <HBox.margin>
+                                          <Insets top="3.0" />
+                                       </HBox.margin>
+                                    </ProgressBar>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3 stelle">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="250.0">
+                                 <children>
+                                    <ProgressBar fx:id="twoStarsPb" prefHeight="25.0" prefWidth="180.0" progress="0.0">
+                                       <HBox.margin>
+                                          <Insets top="3.0" />
+                                       </HBox.margin>
+                                    </ProgressBar>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2 stelle">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="250.0">
+                                 <children>
+                                    <ProgressBar fx:id="oneStarsPb" prefHeight="25.0" prefWidth="180.0" progress="0.0">
+                                       <HBox.margin>
+                                          <Insets top="3.0" />
+                                       </HBox.margin>
+                                    </ProgressBar>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1 stella">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="50.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="310.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Categorie:">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <HBox>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Disponibilità:" wrappingWidth="130.0">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="8.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                    <Rating fx:id="dispRating" mouseTransparent="true" partialRating="true" rating="0.0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Rating>
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Educazione:" wrappingWidth="130.0">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="8.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                    <Rating fx:id="eduRating" mouseTransparent="true" partialRating="true" rating="0.0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Rating>
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pulizia:" wrappingWidth="130.0">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="8.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                    <Rating fx:id="puliziaRating" mouseTransparent="true" partialRating="true" rating="0.0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Rating>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3.0" prefWidth="620.0" style="-fx-background-color: #277c73 #277c#277c73;">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Applica filtri:" wrappingWidth="300.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="categoriaCb" prefWidth="300.0" promptText="Visualizza per categoria" style="-fx-background-color: #FFFFFF; -fx-border-color: #277c73#277c73; -fx-font-size: 18; -fx-font-family: Arial; -fx-border-width: 1.5; -fx-text-alignment: right;">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="stelleCb" prefWidth="300.0" promptText="Stelle" style="-fx-background-color: #FFFFFF; -fx-border-color: #277c73#277c73; -fx-font-size: 18; -fx-font-family: Arial; -fx-border-width: 1.5; -fx-text-alignment: right;">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="linguaCb" prefWidth="300.0" promptText="Lingua" style="-fx-background-color: #FFFFFF; -fx-border-color: #277c73#277c73; -fx-font-size: 18; -fx-font-family: Arial; -fx-border-width: 1.5; -fx-text-alignment: right;">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="dataCb" prefWidth="300.0" promptText="Data" style="-fx-background-color: #FFFFFF; -fx-border-color: #277c73#277c73; -fx-font-size: 18; -fx-font-family: Arial; -fx-border-width: 1.5; -fx-text-alignment: right;">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Button fx:id="filterBtn" mnemonicParsing="false" onAction="#filtraLista" prefWidth="300.0" style="-fx-background-color: #277c73 #277c73 #277c73; -fx-background-radius: 0;" text="Filtra" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="720.0">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" maxWidth="-Infinity" prefWidth="680.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <ComboBox fx:id="cbOrdinazione" onAction="#doOrderBy" prefWidth="280.0" promptText="Ordina per:" style="-fx-background-color: #FFFFFF; -fx-border-color: #277c73#277c73; -fx-font-size: 18; -fx-font-family: Arial; -fx-border-width: 1.5; -fx-text-alignment: right;" />
+                        <VBox alignment="BOTTOM_RIGHT" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="evalLb" contentDisplay="RIGHT" style="-fx-text-alignment: right;" text="Valutazioni trovate:" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <ListView fx:id="valutazioniList" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="678.0" style="-fx-background-color: #ffffff; -fx-border-color: #277c73 #277c73 #277c73 #277c73; -fx-border-width: 1.5;">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ListView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
